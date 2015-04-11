@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.brijeshrakholia.hackprinceton.AskQuestionActivity"
+    android:weightSum="1"
+    android:background="#ffa2989b"
+    android:id="@+id/askQuestion"
+    android:orientation="horizontal">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:id="@+id/question"
+        android:layout_alignParentTop="true"
+        android:inputType="text"
+        android:imeOptions="actionSend"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="0.90" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendQButton"
+        android:layout_weight="0.09"
+        android:background="@android:drawable/ic_menu_send"
+        android:onClick="sendQToServer"/>
+</LinearLayout>

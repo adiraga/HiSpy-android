@@ -1,32 +1,27 @@
 package com.example.brijeshrakholia.hackprinceton;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 
-public class Home extends ActionBarActivity {
+public class AskQuestionActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
-        setTitle("Welcome!");
+        setTitle("Ask Question");
+        setContentView(R.layout.activity_ask_question);
     }
-    /**
-    Called when the user touches the button @+id/Ask
-     */
-    public void callAskQ(View view){
-        Intent intent = new Intent(this,AskQuestionActivity.class);
-        startActivity(intent);
+    public void sendQToServer(){
+
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_home, menu);
+        getMenuInflater().inflate(R.menu.menu_ask_question, menu);
         return true;
     }
 
