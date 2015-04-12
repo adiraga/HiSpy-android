@@ -1,36 +1,41 @@
 package com.example.brijeshrakholia.hackprinceton;
 
-import android.content.Intent;
+import android.content.Context;
+import android.location.Location;
+import android.location.LocationManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicHeader;
+import org.apache.http.protocol.HTTP;
+import org.json.JSONObject;
+import android.provider.Settings.Secure;
+
+public class AnswerQuestion extends ActionBarActivity {
 
 
-public class Home extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
-    }
-    /**
-    Called when the user touches the button @+id/Ask
-     */
-    public void callAskQ(View view){
-        Intent intent = new Intent(this,AskQuestionActivity.class);
-        startActivity(intent);
+        setContentView(R.layout.activity_answer_question);
     }
 
-    public void callAnswerQuestion(View view){
-        Intent intent = new Intent(this,AnswerQuestion.class);
-        startActivity(intent);
-    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_home, menu);
+        getMenuInflater().inflate(R.menu.menu_answer_question, menu);
         return true;
     }
 
@@ -48,4 +53,11 @@ public class Home extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void updateQuestions(View view){
+
+
+    }
 }
+
+

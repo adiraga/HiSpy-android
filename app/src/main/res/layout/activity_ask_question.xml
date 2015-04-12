@@ -30,5 +30,5 @@
         android:id="@+id/sendQButton"
         android:layout_weight="0.09"
         android:background="@android:drawable/ic_menu_send"
-        android:onClick="sendQToServer"/>
+        android:onClick="sendQuestion"/>
 </LinearLayout>
