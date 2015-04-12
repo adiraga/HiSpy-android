@@ -5,6 +5,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_ask_question">AskQuestionActivity</string>
-    <string name="title_activity_launcher">LauncherActivity</string>
+    >
 
 </resources>
