@@ -14,7 +14,6 @@ public class Home extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        setTitle("Welcome!");
     }
     /**
     Called when the user touches the button @+id/Ask

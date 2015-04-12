@@ -11,7 +11,6 @@ public class AskQuestionActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTitle("Ask Question");
         setContentView(R.layout.activity_ask_question);
     }
     public void sendQToServer(){
